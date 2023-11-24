@@ -1,6 +1,10 @@
-<form [formGroup]="basicForm" (ngSubmit)="handleSubmit()">
-<input  type="text" formControlName="name" placeholder="Name">
-<input type="number" formControlName="number" placeholder="Number">
+<div style="border: black 1px solid">
+  <h3>Form Component</h3>
+  <h2 style="color: red">New random number {{randomNumber}}</h2>
+  <form [formGroup]="basicForm" (ngSubmit)="handleSubmit()">
+    <input type="text" formControlName="name" placeholder="Name">
+    <input type="number" formControlName="number" placeholder="Number">
 
-  <button type="submit">Submit</button>
-</form>
+    <button type="submit">Submit</button>
+  </form>
+</div>
